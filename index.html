@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barbeer</title>
+ <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script>
+    $(function(){
+        $(".log2").click(function(){
+        
+
+        if($(".nav").css("display") == "none"){ 
+        	
+        	$(".nav").css("display", "block");
+       $(".block3").css("margin-top", "-6px");
+$(".block2").css("width", "50px"); 
+$(".block1").css("display", "none");
+$(".abc").css("display", "block");
+
+$(".log2").css("z-index", "3");
+        	  var angle = ($('.block2').data('angle') + 45) || 45;
+    $('.block2').css({'transform': 'rotate(' + angle + 'deg)'});
+    $('.block2').data('angle', angle);
+     var angle = ($('.block3').data('angle') + 135) || 135;
+    $('.block3').css({'transform': 'rotate(' + angle + 'deg)'});
+    $('.block3').data('angle', angle);
+
+
+
+}
+else{
+	
+$(".back").css("padding-top", "0");
+$(".block2").css("width", "25px");
+
+	$(".block1").css("display", "block");
+	$(".block3").css("margin-top", "10px");
+	
+ $(".nav").css("display", "none");
+  var angle = ($('.block2').data('angle') + 135) || 135;
+    $('.block2').css({'transform': 'rotate(' + angle + 'deg)'});
+    $('.block2').data('angle', angle);
+    var angle = ($('.block3').data('angle') + 45) || 45;
+    $('.block3').css({'transform': 'rotate(' + angle + 'deg)'});
+    $('.block3').data('angle', angle);
+
+}
+         
+        });
+    });
+</script>
+</head>
+
+<body>
+		<div style="width:100vw;  left: 0;  z-index:-1; 
+  
+		position:  fixed; bottom:0; "> <div style="margin: 0 auto; width:120%; height:302px;  background-image: url(4.png);  background-repeat: no-repeat; background-size: cover;   position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;"></div></div>
+	<div style="margin:0 auto; object-fit: cover; align-self: center; "></div>
+	<div class="cont">
+	<nav>
+		<img src="logo.png" class="logo">
+		<div class="menu">
+			<td><tr><a href="#"  class="menuitem"> HOME</a></tr>
+				<tr class="menuitem"><a href="#"  class="menuitem">ABOUT </a></tr>
+				<tr class="menuitem"><a href="#"  class="menuitem">SERVICES</a></tr>
+					<tr class="menuitem"><a href="#"  class="menuitem">PAGES</a></tr>
+						<tr class="menuitem"><a href="#"  class="menuitem">BLOG</a></tr>
+							<tr class="menuitem"><a href="#"  class="menuitem">CONTACT</a></tr>	<tr class="menuitem"><a href="#"  class="menuitem"><i class="icon-search"></i></a></tr>
+			</td>
+
+		</div>
+		<div click="onclick "class="log2">
+	<div class="block1"></div>
+		<div class="block2"></div>
+			<div class="block3"></div>
+		</div>
+
+
+	</nav><div class="nav">
+	
+	<ul class="abc">  <li><a class="navmenu" href="#">HOME</a></li>
+        <li><a class="navmenu" href="#">CATEGORY</a></li>
+        <li><a class="navmenu" href="#">PAGES</a></li>
+        <li><a  class="navmenu" href="#">ABOUT</a></li>
+        <li><a class="menuitem" href="#">CONTACT</a></li>
+      
+    </ul>
+</div>
+<div class="slider">
+	<div class="mySlides fade" >
+		<div class="number">
+		<div  class="insidenumber" > <div class="blocktire" ></div> 01</div>
+		</div>
+	<div class="text">
+		WELCOME TO
+		<h2>BARBER SHOP <br>FOR  REAL MEN'S</h2>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+<br>
+		<button>GET STARTED</button>
+	</div>
+	<div class="img">
+		<img src="woman.png">
+	</div>
+</div>
+<div class="mySlides fade">
+		<div class="number">
+				<div  class="insidenumber" > <div class="blocktire" ></div> 02</div>
+				</div>
+	<div class="text">
+		WELCOME TO
+		<h2>BARBER SHOP <br/> FOR REAL WOMEN'S</h2>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+<br>
+		<button>GET STARTED</button>
+		
+	</div><div class="img">
+		<img src="woman.png">
+	</div>
+</div>
+
+
+</div>
+<div style="width: 100%; display: block;  margin-top:50px; text-align:left; margin-left:10px;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="boxcounter">
+	
+	<div class="box">
+<img  style="position: absolute;z-index: 1; object-fit: cover;" src="overlay.png"><div class="text" style="position: relative; z-index: 2;">
+		<h2 class="box2">Trimming Bread</h2>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></div></div>
+	<div class="box"><img  style="position: absolute;z-index: 1; object-fit: cover;" src="overlay.png"><div class="text" style="position: relative; z-index: 2;">
+		<h2 class="box2">Trimming Bread</h2>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></div></div>
+	<div class="box"><img  style="position: absolute;z-index: 1; object-fit: cover;" src="overlay.png"><div class="text" style="position: relative; z-index: 2;">
+		<h2 class="box2">Trimming Bread</h2>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p></div></div>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	</body>
+
